@@ -12,6 +12,7 @@
 		11F2D19F2C1EF04200D84153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2D19E2C1EF04200D84153 /* Assets.xcassets */; };
 		11F2D1A22C1EF04200D84153 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2D1A12C1EF04200D84153 /* Preview Assets.xcassets */; };
 		11F2D1AA2C1EF0B600D84153 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2D1A92C1EF0B600D84153 /* Hike.swift */; };
+		11F2D1AC2C1EF77D00D84153 /* HikeDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2D1AB2C1EF77D00D84153 /* HikeDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		11F2D19E2C1EF04200D84153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F2D1A12C1EF04200D84153 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11F2D1A92C1EF0B600D84153 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		11F2D1AB2C1EF77D00D84153 /* HikeDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				11F2D19C2C1EF04100D84153 /* ContentView.swift */,
 				11F2D19E2C1EF04200D84153 /* Assets.xcassets */,
 				11F2D1A02C1EF04200D84153 /* Preview Content */,
+				11F2D1AB2C1EF77D00D84153 /* HikeDetailScreen.swift */,
 			);
 			path = Hiking;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F2D1AA2C1EF0B600D84153 /* Hike.swift in Sources */,
+				11F2D1AC2C1EF77D00D84153 /* HikeDetailScreen.swift in Sources */,
 				11F2D19D2C1EF04100D84153 /* ContentView.swift in Sources */,
 				11F2D19B2C1EF04100D84153 /* HikingApp.swift in Sources */,
 			);

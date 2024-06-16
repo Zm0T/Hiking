@@ -16,17 +16,14 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(hikes){ hike in
-            HStack(alignment: .top) {
-                Image(hike.photo)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 16, height: 16), style: .continuous))
-                    .frame(width: 75)
-                VStack(alignment: .leading) {
-                    Text(hike.name)
-                    Text("\(hike.miles.formatted())")
+        NavigationStack {
+            List(hikes){ hike in
+                NavigationLink(value: hike){
+                    HikeCellView(hike: hike)
                 }
+            }.navigationTitle("Hikes")
+            .navigationDestination(for: Hike.self) { hike in
+                Text(hike.name)
             }
         }
     }
@@ -34,4 +31,23 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+struct HikeCellView: View {
+    
+    let hike: Hike
+    
+    var body: some View {
+        HStack(alignment: .top) {
+            Image(hike.photo)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 16, height: 16), style: .continuous))
+                .frame(width: 100)
+            VStack(alignment: .leading) {
+                Text(hike.name)
+                Text("\(hike.miles.formatted())")
+            }
+        }
+    }
 }
